@@ -29,8 +29,8 @@ jobs:
           file: Dockerfile.amd64
           push: true
           tags: |
-            ghcr.io/rise-mo/cluon-raw-udp:latest
-            ghcr.io/rise-mo/cluon-raw-udp:${{ github.event.release.tag_name }}
+            ghcr.io/mo-rise/cluon-raw-udp:latest
+            ghcr.io/mo-rise/cluon-raw-udp:${{ github.event.release.tag_name }}
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
